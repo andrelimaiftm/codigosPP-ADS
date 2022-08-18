@@ -6,19 +6,19 @@ public  abstract class Animal {
     protected char genero;
     protected Integer idade;
     protected Double peso;
-    protected String color;
+    protected String cor;
 
     //método construtor vazio
     public Animal(){ }
 
     //metodo construtor passando parametros
     public Animal(String nome, char genero, Integer idade,
-         Double peso, String color) {
+         Double peso, String cor) {
         this.nome = nome;
         this.genero = genero;
         this.idade = idade;
         this.peso = peso;
-        this.color = color;
+        this.cor = cor;
     }
 
     //métodos da classe
@@ -37,6 +37,8 @@ public  abstract class Animal {
     public void dormir(int horas){
         System.out.printf("%s dormiu %d horas", this.nome, horas);
     }
+
+    public abstract void emitirsom();
 
     //métodos getter e setter
     /** 
@@ -74,11 +76,15 @@ public  abstract class Animal {
         this.peso = peso;
     }
 
-    public String getColor() {
-        return color;
+    public String getCor() {
+        return cor;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }    
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    
+
+      
 }

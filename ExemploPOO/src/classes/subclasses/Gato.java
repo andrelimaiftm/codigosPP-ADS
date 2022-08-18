@@ -26,6 +26,12 @@ public class Gato extends Animal {
         this.estaMalHumorado = estaMalHumorado;
     }
 
+    @Override
+    public void emitirsom() {
+        miar();
+        
+    }
+
     
     
 }
