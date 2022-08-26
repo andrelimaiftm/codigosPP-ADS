@@ -9,5 +9,9 @@ public class GrifoDomestico implements TransporteAereo {
         System.out.println("Numero de passageiro: " + numeroPassageiros);
         
     }
+
+    public void voar (int n, String origem, String destino, int numeroPassageiros){
+
+    }
     
 }

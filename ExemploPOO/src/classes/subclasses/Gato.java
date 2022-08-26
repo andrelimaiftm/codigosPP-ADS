@@ -1,7 +1,9 @@
 package classes.subclasses;
 import classes.superclasse.Animal;
+import interfaces.QuatroPatas;
+import interfaces.RespiradoresOxigenio;
 
-public class Gato extends Animal {
+public class Gato extends Animal implements QuatroPatas, RespiradoresOxigenio {
 
     private Boolean estaMalHumorado;
 
@@ -31,6 +33,24 @@ public class Gato extends Animal {
         miar();
         
     }
+
+    @Override
+    public void tomarBanho() {
+        System.out.println("labendo o pelo");
+        
+    }
+
+    @Override
+    public void respirar() {
+        System.out.println(this.nome + " está respirando.");
+        
+    }
+
+    @Override
+    public void correr(String destino) {
+        System.out.println(this.nome + " está correndo "+ destino);
+        
+    } 
 
     
     

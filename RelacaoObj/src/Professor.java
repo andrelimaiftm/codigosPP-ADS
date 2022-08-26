@@ -1,3 +1,4 @@
+@SuppressWarnings("all")
 public class Professor {
 
     //associação entre a classe Professor e Aluno
@@ -12,5 +13,7 @@ public class Professor {
     //metodo com dependencia com a classe Curso
     public void ensinar(Curso c){
         aluno.lembrar(c.obterConhecimento());
-    }    
+    }
+    
+    
 }

@@ -1,5 +1,6 @@
 import java.util.List;
 
+@SuppressWarnings("all")
 public class Pedido {
 
     private List<Item> itens;

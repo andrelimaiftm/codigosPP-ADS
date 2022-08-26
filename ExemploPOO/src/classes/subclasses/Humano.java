@@ -10,7 +10,7 @@ public class Humano {
         this.nome = nome;
     }
     
-    public void darCarinho(Animal animal){
+    public void darCarinho(Animal animal){           
             System.out.println("Fazendo carinho " + animal.getNome());
             animal.emitirsom();
     }

@@ -22,21 +22,23 @@ public  abstract class Animal {
     }
 
     //métodos da classe
-    public void respirar(){
+    /*public void respirar(){
         System.out.println(this.nome + " está respirando.");
-    }
+    }*/
 
     public void comer(String comida){
         System.out.println(this.nome + " está comendo " + comida);
     }
 
-    public void correr(String destino){
+    /*public void correr(String destino){
         System.out.println(this.nome + " está correndo "+ destino);
-    }
+    }*/
 
     public void dormir(int horas){
         System.out.printf("%s dormiu %d horas", this.nome, horas);
     }
+
+    public abstract void tomarBanho();
 
     public abstract void emitirsom();
 
