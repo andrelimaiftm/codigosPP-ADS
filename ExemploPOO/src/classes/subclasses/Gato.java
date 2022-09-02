@@ -1,5 +1,6 @@
 package classes.subclasses;
 import classes.superclasse.Animal;
+import interfaces.Comida;
 import interfaces.QuatroPatas;
 import interfaces.RespiradoresOxigenio;
 
@@ -7,13 +8,16 @@ public class Gato extends Animal implements QuatroPatas, RespiradoresOxigenio {
 
     private Boolean estaMalHumorado;
 
+    private int energia;
+
     public Gato(){}
 
     public Gato(String nome, char genero, 
         Integer idade, Double peso, String color,
-         Boolean estaMalHumorado) {
+         Boolean estaMalHumorado, int energia) {
         super(nome, genero, idade, peso, color);
         this.estaMalHumorado = estaMalHumorado;
+        this.energia = energia;
     }
     
     public void miar(){
@@ -50,8 +54,17 @@ public class Gato extends Animal implements QuatroPatas, RespiradoresOxigenio {
     public void correr(String destino) {
         System.out.println(this.nome + " está correndo "+ destino);
         
-    } 
+    }
+    
+    public void alimentar(Comida c){
+        this.energia += c.getNutriente();
+    }
 
-    
-    
+    public int getEnergia() {
+        return energia;
+    }
+
+    public void setEnergia(int energia) {
+        this.energia = energia;
+    }     
 }

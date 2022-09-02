@@ -26,9 +26,9 @@ public  abstract class Animal {
         System.out.println(this.nome + " está respirando.");
     }*/
 
-    public void comer(String comida){
+    /*public void comer(String comida){
         System.out.println(this.nome + " está comendo " + comida);
-    }
+    }*/
 
     /*public void correr(String destino){
         System.out.println(this.nome + " está correndo "+ destino);
