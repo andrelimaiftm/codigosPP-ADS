@@ -1,6 +1,6 @@
 public class Quadrado extends Retangulo{
 
-    /*@Override
+    @Override
     public void setLargura(int largura){
         this.largura = largura;
         this.altura = largura;
@@ -10,5 +10,5 @@ public class Quadrado extends Retangulo{
     public void setAltura(int altura){
         this.largura = altura;
         this.altura = altura;
-    }*/
+    }
 }
