@@ -8,7 +8,10 @@ public abstract class Pato {
     ComportamentoQuack comportamentoQuack;
     ComportamentoVoo comportamentoFly;
 
-    public Pato(){}  
+    public Pato(){
+    }  
+
+    
 
     public void setComportamentoQuack(ComportamentoQuack comportamentoQuack) {
         this.comportamentoQuack = comportamentoQuack;

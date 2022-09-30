@@ -6,9 +6,7 @@ public class NaoFlyDeJeitoNenhum implements ComportamentoVoo{
 
     @Override
     public void fly() {
-        System.out.println("Eu não posso voar de jeito nenhum .. tuummm ploft");
-        
-    }
-    
+        System.out.println("Eu não posso voar de jeito nenhum .. tuummm ploft");        
+    }    
     
 }

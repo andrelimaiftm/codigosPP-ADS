@@ -15,8 +15,8 @@ public class TextBoxObservavel implements Observavel {
     private JTextField conteudoJTextField;
 
     @Override
-    public void adicionar(List<Observador> observadores) {
-        for (Observador o : observadores) {
+    public void adicionar(List<Observador> obs) {
+        for (Observador o : obs) {
             if(!this.observadores.contains(o)){
                 this.observadores.add(o);
             }

@@ -2,7 +2,7 @@ package interfaces;
 
 import java.util.List;
 
-//interface observer
+//interface observable
 public interface Observavel {
 
     //subcribe

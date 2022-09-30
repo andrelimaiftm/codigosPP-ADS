@@ -111,7 +111,8 @@ public class Janela {
 		
         conteudoJTextField.addKeyListener(new KeyAdapter() {
 			public void keyReleased(KeyEvent e) {			  
-				textBoxObservavel.notificar();			  
+				textBoxObservavel.notificar();
+				System.out.println(e.getKeyChar());			  
 			}
 		});		
 	};
