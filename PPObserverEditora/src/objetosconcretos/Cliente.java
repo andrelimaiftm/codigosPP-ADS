@@ -15,10 +15,10 @@ public class Cliente implements Observador {
 
     @Override
     public void atualizar(Observavel observavel) {
-        if (observavel instanceof AssinaturaRevista) {
+        //if (observavel instanceof AssinaturaRevista) {
             AssinaturaRevista assinatura = (AssinaturaRevista) observavel;
             this.revista = assinatura.getRevista();
-        }
+        //}
 
     }
 

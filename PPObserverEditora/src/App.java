@@ -32,8 +32,8 @@ public class App {
         assinatura.notificar();
 
         //imprimindo o objeto cliente para verificar se objeto revista foi atualizado
-        System.out.println(c1.getRevista());
-        System.out.println(c2.getRevista());
+        System.out.println(c1);
+        System.out.println(c2);
         
         //removendo objeto observador da lista de observadores
         assinatura.remover(c1);
@@ -44,8 +44,10 @@ public class App {
         //observalvel concreto notifica todos os ser observadores
         assinatura.notificar();
 
+        System.out.println();
+
         //imprimindo o objeto cliente para verificar se objeto revista foi atualizado 
-        System.out.println(c1.getRevista());
-        System.out.println(c2.getRevista());
+        System.out.println(c1);
+        System.out.println(c2);
     }
 }
